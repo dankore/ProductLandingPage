@@ -1,0 +1,211 @@
+html{
+  background-color: cyan;
+}
+
+
+body{
+    background-color: #fff;
+    margin:0px;
+}
+
+
+#header{
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      background: linear-gradient(90deg, #70d467 0, #6fbbfa);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#div-img{
+   margin: 20px;
+   bottom: 0;
+}
+
+
+#header-img{
+    height: 45px ;
+    background-color: green;
+    z-index: 2;
+}
+
+#nav-bar{
+    padding-top: 30px;
+    margin-right: 200px;
+    background-color: inherit;
+    padding-right: 20px;
+}
+
+.nav-link{
+   padding-left: 50px;
+   text-decoration: none;
+   font-weight:bolder;
+   font-size: 30px;
+}
+
+
+a:hover{color: white;}
+
+
+ #first-container{
+    max-width: 960px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    display: grid;
+   grid-gap: 60px;
+    grid-template-columns: auto auto;
+    background-color: white;
+}
+
+#house-container{
+   border-radius: 5%;
+   background-image: url(house-nigeria.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   max-height: 100%;
+   max-width: 100%;
+}
+
+#form-left{
+    background-color: #F0F0F0;
+}
+
+
+#email{
+   margin-bottom: 80px;
+   background: white;
+   color: black;
+   font-family: tahoma,geneva,algerian;
+   border-radius: 10px;
+   width: 300px;
+   height: 40px;
+   border: .5px solid #524;                 
+}
+
+#submit {
+
+    margin-bottom: 80px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    width: 90px;
+    height: 40px;
+    border: .5px solid #524;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+#submit:hover{
+    background-color:white;
+    color: black;
+}
+
+#subscribe-h2{
+    padding-top: 50px;
+}
+#form-right{
+    grid-column: 1/ span 2;
+    grid-row:2;
+    background-color: #F0F0F0;
+}
+
+
+#video-left{
+
+    grid-column: 1/2;
+    grid-row:3;
+    background-color: #F0F0F0;
+}
+
+
+#video-right{
+   
+     height: 400px;
+     grid-column: 2/ span 1;
+     grid-row:3;
+     background-color: 	#F0F0F0;
+}
+
+#video1{
+    background-color: white;
+     grid-column: 1/3;
+       grid-row: 4;
+
+}
+
+#video-h2-p{
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+/* Media Queries - make site fits nicely to different screen sizes i.e mobile, tablets and regular pcs*/
+
+
+@media (min-width: 481px) and (max-width: 800px){
+   #first-container{
+      max-width: 70vw;
+      margin-top: 15%;} 
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+    #video {
+     height: 200px; width: 100%;}
+
+body{
+    min-width: 365px;
+}
+#first-container{
+     margin-top: 145px;
+     max-width: 363px;
+     text-align: center;
+     grid-gap: 30px;
+     display: grid;
+     grid-template-columns: auto;}
+
+
+#form-left{
+    grid-column: 1;
+    grid-row:1;
+    background-color: #F0F0F0;}
+
+#house-container{
+    grid-column: 1;
+    grid-row:2; 
+   background-image: url(house-nigeria.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 600px;
+}
+
+#form-right{
+   grid-column: 1;
+   grid-row:3;
+   background-color: #F0F0F0;
+}
+
+#video-left{
+   grid-column: 1;
+   grid-row:4;
+   background-color: #F0F0F0;
+}
+
+#video-right{
+   grid-column: 1;
+   grid-row:5;
+   background-color: 	#F0F0F0;
+}
+
+#video1{
+   grid-column: 1;
+   grid-row: 6;}
+}
